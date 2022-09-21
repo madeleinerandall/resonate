@@ -1,5 +1,5 @@
 .banner {
-    height: 100px;
+    height: 65px;
     width: 100%;
     color: white;
     background-color: #282a2f;
@@ -9,12 +9,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
-.head-title {
-
+.head-title > h1 {
+    margin: 0;
+    font-size: 25px;
+    font-family: ui-sans-serif;
+    letter-spacing: 1px;
 }
 
 .head-search {
+    display: flex;
+}
 
+.head-search > input {
+    padding: 5px 5px;
+    margin-left: 5px;
+    color: white;
+    background-color: #282a2f;
+    border: none;
+    font-family: ui-sans-serif;
+    letter-spacing: 0.5px;
+}
+
+input::placeholder {
+    color: white;
 }

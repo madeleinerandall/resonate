@@ -1,5 +1,7 @@
 import "./App.css";
 import Header from "./Header";
+import Card from "./Card";
+import Details from "./Details";
 import { useEffect, useState } from "react";
 
 async function getUsers() {
@@ -10,6 +12,15 @@ async function getUsers() {
 
 function App() {
   const [users, setUsers] = useState([]);
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   useEffect(() => {
     getUsers().then(setUsers);
@@ -20,10 +31,14 @@ function App() {
       <Header />
 
       <ul className="body gutters">
-        {users?.map((user) => {
-          return <li key={user.id}>{user.name}</li>;
-        })}
+        {users?.map((user) => (
+          <Card user={user} key={user.id} />
+        ))}
       </ul>
+
+      <button onClick={handleClickOpen}>open</button>
+
+      {open && <Details handleClose={handleClose} />}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import "./style.css";
+import SearchIcon from "@mui/icons-material/Search";
 
 function Header() {
   return (
@@ -8,6 +9,7 @@ function Header() {
           <h1>Contacts</h1>
         </div>
         <div className="head-search">
+          <SearchIcon />
           <input placeholder="Search" type="text" />
         </div>
       </div>
