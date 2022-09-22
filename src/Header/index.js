@@ -3,7 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 function Header() {
   return (
-    <header className="banner">
+    <header>
       <div className="head-content gutters">
         <div className="head-title">
           <h1>Contacts</h1>

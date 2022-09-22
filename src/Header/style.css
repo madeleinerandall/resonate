@@ -1,8 +1,9 @@
-.banner {
+header {
     height: 65px;
     width: 100%;
     color: white;
     background-color: #282a2f;
+    margin-bottom: 30px;
 }
 
 .head-content {
