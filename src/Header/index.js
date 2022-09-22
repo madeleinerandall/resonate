@@ -8,10 +8,10 @@ function Header() {
         <div className="head-title">
           <h1>Contacts</h1>
         </div>
-        <div className="head-search">
+        {/* <div className="head-search">
           <SearchIcon />
           <input placeholder="Search" type="text" />
-        </div>
+        </div> */}
       </div>
     </header>
   );

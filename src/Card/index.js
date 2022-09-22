@@ -22,7 +22,7 @@ function Card({ user }) {
     <li>
       <div className="cards-name-tag">
         <div>
-          <img src={imgMap[user.id - 1]} alt="profile picture" />
+          <img src={imgMap[user.id - 1]} alt="avatar" />
         </div>
         <div>
           <p>{user.name}</p>
@@ -36,7 +36,10 @@ function Card({ user }) {
         </div>
         <div className="specific-icon">
           <PushPinIcon />
-          <p>{user.email}</p>
+          <p>
+            {user.address.suite} {user.address.street}, {user.address.city},{" "}
+            {user.address.zipcode}
+          </p>
         </div>
         <div className="specific-icon">
           <LocationOnIcon />
