@@ -26,6 +26,8 @@ function App() {
     getUsers().then(setUsers);
   }, []);
 
+  console.log({ users });
+
   return (
     <div className="App">
       <Header />
